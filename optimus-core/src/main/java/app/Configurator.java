@@ -19,7 +19,7 @@ public class Configurator {
         OPTIMUS_CONFIGS.put(ConfigType.CONFIG_READY.name(), false);
     }
 
-    public static Configurator getInstance() {
+    static Configurator getInstance() {
         return Holder.INSTANCE;
     }
 
