@@ -3,16 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Optimus.iml" filepath="$PROJECT_DIR$/Optimus.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Optimus/Optimus.iml" filepath="$PROJECT_DIR$/Optimus/Optimus.iml" />
       <module fileurl="file://$PROJECT_DIR$/Optimus/Optimus-Optimus.iml" filepath="$PROJECT_DIR$/Optimus/Optimus-Optimus.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OptimusPrime.iml" filepath="$PROJECT_DIR$/OptimusPrime.iml" />
-      <module fileurl="file://$PROJECT_DIR$/optimus-annotations/optimus-annotations.iml" filepath="$PROJECT_DIR$/optimus-annotations/optimus-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/optimus-annotations/optimus-annotations.iml" filepath="$PROJECT_DIR$/optimus-annotations/optimus-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/optimus-compiler/optimus-compiler.iml" filepath="$PROJECT_DIR$/optimus-compiler/optimus-compiler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/optimus-compiler/optimus-compiler.iml" filepath="$PROJECT_DIR$/optimus-compiler/optimus-compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/optimus-core/optimus-core.iml" filepath="$PROJECT_DIR$/optimus-core/optimus-core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/optimus-core/optimus-core.iml" filepath="$PROJECT_DIR$/optimus-core/optimus-core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/optimus-pd/optimus-pd.iml" filepath="$PROJECT_DIR$/optimus-pd/optimus-pd.iml" />
       <module fileurl="file://$PROJECT_DIR$/optimus-pd/optimus-pd.iml" filepath="$PROJECT_DIR$/optimus-pd/optimus-pd.iml" />
     </modules>
   </component>

@@ -32,4 +32,16 @@ dependencies {
     compile project(':optimus-annotations')
     compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
     compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+
+
+    //Butterknife依赖
+    compile 'com.jakewharton:butterknife:7.0.1'
+
+
+    //网络请求依赖
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.retrofit2:retrofit-converters:2.3.0'
+    compile 'com.solidfire.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
 }
