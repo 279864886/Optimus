@@ -63,6 +63,7 @@ public class Configurator {
     }
 
 
+
     @SuppressWarnings("unchecked")
     final <T> T getConfiguration(Enum<ConfigType> key) {
         checkConfiguration();

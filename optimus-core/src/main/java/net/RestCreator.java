@@ -10,6 +10,6 @@ import app.Optimus;
 public class RestCreator {
 
     private static final class RetrofitHolder {
-        private static final String BASE_URL = Optimus.getApplicationUrl();
+        //private static final String BASE_URL = Optimus.getApplicationUrl();
     }
 }

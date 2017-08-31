@@ -29,4 +29,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile project(':optimus-pd')
     annotationProcessor project(':optimus-compiler')
+    compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
+    compile 'com.joanzapata.android.iconify:android-iconify-fontawesome:2.0.0'
 }
