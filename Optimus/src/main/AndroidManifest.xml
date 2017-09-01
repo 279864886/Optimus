@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="op.com.a804.chenwenhao.optimusprime">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".OptimusApp"
         android:allowBackup="true"

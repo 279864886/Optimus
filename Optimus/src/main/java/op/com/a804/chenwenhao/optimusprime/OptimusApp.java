@@ -17,7 +17,7 @@ public class OptimusApp extends Application {
 
         Optimus.init(this)
                 .withIcon(new FontAwesomeModule())
-                .withApiHost("http://127.0.0.1")
+                .withApiHost("https://api.douban.com/v2/")
                 .configure();
     }
 }
