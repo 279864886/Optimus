@@ -44,15 +44,16 @@ public class OptimusAppDelegate extends OptimusDelegate {
 
                         Gson gson = new GsonBuilder()
                                 .setPrettyPrinting()
-                                .disableHtmlEscaping()
+                                .serializeNulls()
+                                .generateNonExecutableJson()
                                 .setLenient()
                                 .create();
-                        StringReader sr=new StringReader(response.toString());
-                        JsonReader jr=new JsonReader(sr);
+                        StringReader sr = new StringReader(response.toString());
+                        JsonReader jr = new JsonReader(sr);
 
                         jr.setLenient(false);
 
-                        book b = gson.fromJson(jr,book.class);
+                        book b = gson.fromJson(jr, book.class);
 
                         Toast.makeText(getContext(), b.getId() + "-" + b.getTitle(), Toast.LENGTH_LONG).show();
                     }

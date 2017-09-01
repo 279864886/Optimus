@@ -32,6 +32,9 @@ public interface RestService {
     @GET("book/{id}")
     Call<Object> get(@Path("id")String id ,@Query("fields") String str);
 
+    @GET("book/{id}")
+    Call<book> get1(@Path("id")String id ,@Query("fields") String str);
+
     @FormUrlEncoded
     @POST
     Call<String> post(@Url String url, @FieldMap Map<String, Object> parms);

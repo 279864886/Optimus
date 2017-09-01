@@ -61,7 +61,8 @@ public class RestClient {
         switch (method) {
             case GET:
                 //call=service.get(URL, PARMAS);
-                call=service.get("17604305","id,title,url");
+                  call=service.get("17604305","id,title,rating");
+                //call = service.get("17604305", "id,title");
                 break;
 //            case POST:
 //                call = service.post(URL, PARMAS);
