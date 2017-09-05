@@ -1,4 +1,4 @@
-package op.com.a804.chenwenhao.optimus.pd;
+package com.a804.chenwenhao.optimus_pd;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("op.com.a804.chenwenhao.optimus.pd.test", appContext.getPackageName());
+        assertEquals("com.a804.chenwenhao.optimus_pd.test", appContext.getPackageName());
     }
 }

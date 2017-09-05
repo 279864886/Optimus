@@ -1,15 +1,14 @@
 package op.com.a804.chenwenhao.optimusprime;
 
-import android.os.Bundle;
-import android.widget.Toast;
-
 import activities.ProxyActivity;
 import delegates.OptimusDelegate;
 
 public class OptimusMainActivity extends ProxyActivity {
     @Override
     public OptimusDelegate setRootDelegate() {
+//        return new OptimusAppDelegate();
         return new OptimusAppDelegate();
+
     }
 
 //    @Override
