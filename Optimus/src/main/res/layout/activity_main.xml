@@ -25,7 +25,7 @@
             android:background="@color/colorPageBg"
             android:clickable="true"
             android:fitsSystemWindows="true"
-            app:headerLayout="@layout/delegate_login"/>
+            app:headerLayout="@layout/delegate_navigation"/>
 
         <!--app:headerLayout="@layout/nav_header_main"-->
         <!--app:menu="@menu/activity_main_drawer"-->

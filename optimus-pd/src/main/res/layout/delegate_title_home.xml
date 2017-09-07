@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sl_title_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/MyThemeRed">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"
+        android:src="@drawable/koala" />
+
+    <LinearLayout
+        android:id="@+id/bird_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusedMonthDateColor="#f00">
+
+
+        </CalendarView>
+
+        <!--
+        <ImageView
+            android:src="@drawable/koala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/sample_together"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/hand" />
+    </RelativeLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>

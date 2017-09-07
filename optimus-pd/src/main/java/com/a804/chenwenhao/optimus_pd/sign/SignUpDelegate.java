@@ -20,18 +20,14 @@ public class SignUpDelegate extends OptimusDelegate {
 
     @BindView(R2.id.edit_sign_up_name)
     TextInputEditText mName = null;
-    @BindView(R2.id.edit_sign_up_email)
-    TextInputEditText mEmail = null;
-    @BindView(R2.id.edit_sign_up_phone)
-    TextInputEditText mPhone = null;
     @BindView(R2.id.edit_sign_up_password)
     TextInputEditText mPassword = null;
     @BindView(R2.id.edit_sign_up_re_password)
     TextInputEditText mRePassword = null;
 
     @OnClick(R2.id.tv_link_sign_in)
-    void onClickLink() {
-        getSupportDelegate().start(new SignInDelegate());
+    void onClickLinkSignIn() {
+       getSupportDelegate().start(new SignInDelegate());
     }
 
     @OnClick(R2.id.btn_sign_up)
@@ -43,8 +39,6 @@ public class SignUpDelegate extends OptimusDelegate {
 
     private boolean checkForm() {
         final String name = mName.getText().toString();
-        final String email = mEmail.getText().toString();
-        final String phone = mPhone.getText().toString();
         final String password = mPassword.getText().toString();
         final String rePassword = mRePassword.getText().toString();
 
@@ -55,20 +49,6 @@ public class SignUpDelegate extends OptimusDelegate {
             isPass = false;
         } else {
             mName.setError(null);
-        }
-
-        if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            mEmail.setError("错误的邮箱格式");
-            isPass = false;
-        } else {
-            mEmail.setError(null);
-        }
-
-        if (phone.isEmpty() || phone.length() != 11) {
-            mPhone.setError("手机号码错误");
-            isPass = false;
-        } else {
-            mPhone.setError(null);
         }
 
         if (password.isEmpty() || password.length() < 6) {
@@ -96,5 +76,12 @@ public class SignUpDelegate extends OptimusDelegate {
     @Override
     public void onBindView(@Nullable Bundle savedInstanceState, View rootView) {
 
+        /*
+        rootView.findViewById(R.id.tv_link_sign_in).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                start(new SignInDelegate());
+            }
+        });*/
     }
 }

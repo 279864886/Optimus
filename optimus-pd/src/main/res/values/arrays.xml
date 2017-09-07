@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="department">
+        <item>804所</item>
+        <item>805所</item>
+        <item>803所</item>
+        <item>802所</item>
+        <item>149厂</item>
+    </string-array>
+
+    <string-array name="post">
+        <item>地面测发控</item>
+        <item>控制系统</item>
+        <item>总体</item>
+        <item>802所</item>
+        <item>149厂</item>
+    </string-array>
+
+</resources>

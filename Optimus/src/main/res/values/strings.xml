@@ -74,4 +74,5 @@
     <string name="fa_user">{fa-user}</string>
     <string name="fa_file_text">{fa-file-text}</string>
     <string name="fa_bars">{fa-bars}</string>
+    <string name="fa_home">{fa-home}</string>
 </resources>

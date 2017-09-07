@@ -2,4 +2,35 @@
     <string name="app_name">OptimusPrime</string>
     <string name="fa_coffee">{fa-coffee}</string>
     <string name="fa_weixin">{fa-weixin}</string>
+    <string name="DMCFK">地面测发控</string>
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+
+
+    <string name="string_about_me">
+        balabalabalabala
+    </string>
+
+    <string name="string_about">偏爱红，如特别喜爱网易云音乐的界面风格，仿写了UI。
+        \n\n 大部分数据使用的是CZ-6测发控系统数据，基于前期的大数据平台网站RestAPI。
+        \n\n 整体采用Retrofit+RxJava+OKHttp+ButterKnife框架。
+        \n\n 采用单Activity+多Fragment的架构，欢迎其他同事来学习。
+        \n\n 项目完全开源！
+    </string>
+
+    <string name="string_lib">
+         zoomlibrary
+        \n com.android.support:appcompat-v7:25.1.1
+        \n com.android.support:design:25.1.1
+        \n com.android.support:cardview-v7:25.1.1
+        \n com.squareup.retrofit2:retrofit:2.3.0
+        \n com.squareup.okhttp3:okhttp:3.2.0
+        \n com.cocosw:bottomsheet:1.+@aar
+        \n com.jakewharton:butterknife:8.8.1
+        \n com.joanzapata.android.iconify:android-iconify-fontawesome:2.0.0
+        \n me.yokeyword:fragmentation-swipeback:1.1.3
+    </string>
+    <string name="deedback">您好，很希望得到您的意见，由于没有线上反馈系统，您可以在804所现场负责人处说明问题原因，也可以通过以下方式提交意见或建议。</string>
+
 </resources>

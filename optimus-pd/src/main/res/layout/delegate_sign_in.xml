@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:theme="@style/MyThemeRed">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
@@ -51,7 +52,7 @@
                     android:id="@+id/edit_sign_in_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="邮箱"
+                    android:hint="用户名"
                     android:inputType="textEmailAddress"
                     tools:ignore="HardcodedText" />
             </android.support.design.widget.TextInputLayout>
