@@ -50,6 +50,8 @@ import navigation_view.Navigation_HomePage_Delegate;
 public class OptimusAppDelegate extends OptimusDelegate implements View.OnClickListener {
 
 
+    //http://www.runoob.com/w3cnote/android-ui-framework.html
+
     @BindView(R2.id.iv_title_menu)
     TextView itv;
 
