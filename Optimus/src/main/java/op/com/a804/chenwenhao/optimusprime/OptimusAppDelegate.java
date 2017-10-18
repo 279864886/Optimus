@@ -36,6 +36,8 @@ import java.util.List;
 import ViewPageAdapter.MyFragmentAdapter;
 import butterknife.BindView;
 import delegates.OptimusDelegate;
+import main_ui.data_delegate;
+import main_ui.report_delegate;
 import main_ui.title_home_delegate;
 import navigation_view.Navigation_About_Delegate;
 import navigation_view.Navigation_Content_Delegate;
@@ -78,50 +80,49 @@ public class OptimusAppDelegate extends OptimusDelegate implements View.OnClickL
         itv.setOnClickListener(this);
 
 
+        List<Fragment> fragments = new ArrayList<>();
+        fragments.add(new title_home_delegate());
+        fragments.add(new data_delegate());
+        fragments.add(new report_delegate());
 
+        adapter = new MyFragmentAdapter(this.getActivity().getSupportFragmentManager(), fragments);
+        viewPager.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+        viewPager.setCurrentItem(0);
 
-//        List<Fragment> fragments = new ArrayList<Fragment>();
-//        fragments.add(new SignUpDelegate());
-//        fragments.add(new SignInDelegate());
+        final TextView itv1 = (TextView) rootView.findViewById(R.id.iv_title_home);
+        final TextView itv2 = (TextView) rootView.findViewById(R.id.iv_title_chart);
+        final TextView itv3 = (TextView) rootView.findViewById(R.id.iv_title_report);
 //
-//        adapter = new MyFragmentAdapter(this.getActivity().getSupportFragmentManager(), fragments);
-//        viewPager.setAdapter(adapter);
-//        adapter.notifyDataSetChanged();
-//        viewPager.setCurrentItem(0);
+        itv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                itv1.setTextSize(35);
+                itv2.setTextSize(20);
+                itv3.setTextSize(20);
+                viewPager.setCurrentItem(0);
+            }
+        });
 //
-//        final TextView itv1 = (TextView) rootView.findViewById(R.id.iv_title_1);
-//        final TextView itv2 = (TextView) rootView.findViewById(R.id.iv_title_2);
-//        final TextView itv3 = (TextView) rootView.findViewById(R.id.iv_title_3);
+        itv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                itv2.setTextSize(35);
+                itv1.setTextSize(20);
+                itv3.setTextSize(20);
+                viewPager.setCurrentItem(1);
+            }
+        });
 //
-//        itv1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                itv1.setTextSize(35);
-//                itv2.setTextSize(20);
-//                itv3.setTextSize(20);
-//                viewPager.setCurrentItem(0);
-//            }
-//        });
-//
-//        itv2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                itv2.setTextSize(35);
-//                itv1.setTextSize(20);
-//                itv3.setTextSize(20);
-//                viewPager.setCurrentItem(1);
-//            }
-//        });
-//
-//        itv3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                itv3.setTextSize(35);
-//                itv2.setTextSize(20);
-//                itv1.setTextSize(20);
-//                //viewPager.setCurrentItem(1);
-//            }
-//        });
+        itv3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                itv3.setTextSize(35);
+                itv2.setTextSize(20);
+                itv1.setTextSize(20);
+                viewPager.setCurrentItem(2);
+            }
+        });
 
     }
 
@@ -197,8 +198,8 @@ public class OptimusAppDelegate extends OptimusDelegate implements View.OnClickL
                 break;
             case R.id.ll_nav_exit:
                 //Toast.makeText(getContext(), "exit", Toast.LENGTH_SHORT).show();
-                //System.exit(0);
-                start(new title_home_delegate());
+                System.exit(0);
+                //start(new title_home_delegate());
                 break;
             default:
                 break;

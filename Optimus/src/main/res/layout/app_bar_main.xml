@@ -71,18 +71,7 @@
                     android:textSize="20sp" />
 
                 <com.joanzapata.iconify.widget.IconTextView
-                    android:id="@+id/iv_title_1"
-                    android:layout_width="55dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:gravity="center"
-                    android:text="@string/fa_table"
-                    android:textSize="20sp" />
-
-                <com.joanzapata.iconify.widget.IconTextView
-                    android:id="@+id/iv_title_2"
+                    android:id="@+id/iv_title_chart"
                     android:layout_width="55dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -93,7 +82,7 @@
                     android:textSize="20sp" />
 
                 <com.joanzapata.iconify.widget.IconTextView
-                    android:id="@+id/iv_title_3"
+                    android:id="@+id/iv_title_report"
                     android:layout_width="55dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"

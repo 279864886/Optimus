@@ -40,7 +40,7 @@
         android:layout_height="match_parent">
         <TextView
             android:tag="Hover"
-            android:text="理解（りかい）されるということは、一種（いっしゅ）の贅沢（ぜいたく）である。"
+            android:text="演示数据平台APP(Android版)"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
