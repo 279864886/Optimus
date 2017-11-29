@@ -46,6 +46,7 @@ public class OptimusAppDelegate extends OptimusDelegate implements View.OnClickL
 
 
     //http://www.runoob.com/w3cnote/android-ui-framework.html
+    //http://www.runoob.com/w3cnote/android-ui-framework.html
 
     @BindView(R2.id.iv_title_menu)
     TextView itv;
