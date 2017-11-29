@@ -1,27 +1,21 @@
 package op.com.a804.chenwenhao.optimusprime;
 
-import android.app.Activity;
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.a804.chenwenhao.optimus_pd.sign.SignInDelegate;
-import com.a804.chenwenhao.optimus_pd.sign.SignUpDelegate;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
-import com.joanzapata.android.iconify.views.IconTextView;
-
-import android.support.v4.app.Fragment;
 
 import net.RestClient;
 import net.book;
@@ -43,7 +37,6 @@ import navigation_view.Navigation_About_Delegate;
 import navigation_view.Navigation_Content_Delegate;
 import navigation_view.Navigation_Deedback_Delegate;
 import navigation_view.Navigation_Download_Delegate;
-import navigation_view.Navigation_HomePage_Delegate;
 
 /**
  * Created by chenwenhao on 2017/8/31.
@@ -90,9 +83,9 @@ public class OptimusAppDelegate extends OptimusDelegate implements View.OnClickL
         adapter.notifyDataSetChanged();
         viewPager.setCurrentItem(0);
 
-        final TextView itv1 = (TextView) rootView.findViewById(R.id.iv_title_home);
-        final TextView itv2 = (TextView) rootView.findViewById(R.id.iv_title_chart);
-        final TextView itv3 = (TextView) rootView.findViewById(R.id.iv_title_report);
+        final TextView itv1 = rootView.findViewById(R.id.iv_title_home);
+        final TextView itv2 = rootView.findViewById(R.id.iv_title_chart);
+        final TextView itv3 = rootView.findViewById(R.id.iv_title_report);
 //
         itv1.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -3,10 +3,10 @@ package com.a804.chenwenhao.optimus_pd.sign;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
-import butterknife.BindView;
-import butterknife.OnClick;
+
+import butterknife.*;
 import delegates.OptimusDelegate;
 import op.com.a804.chenwenhao.optimus.pd.R;
 import op.com.a804.chenwenhao.optimus.pd.R2;
@@ -17,11 +17,12 @@ import op.com.a804.chenwenhao.optimus.pd.R2;
 
 public class SignInDelegate extends OptimusDelegate {
 
+    @BindView(R2.id.tv_link_sign_in)
+    TextView linkToSignIn;
 
 
-
-    @OnClick(R2.id.tv_link_sign_up)
-    void SignUp(){
+    @OnClick(R2.id.tv_link_sign_in)
+    void SignUp() {
         start(new SignUpDelegate());
     }
 
